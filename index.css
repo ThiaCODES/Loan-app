@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #b1c8cf;
+}
+.container {
+  display: flex;
+  padding: 20px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+}
+.loan-box {
+  border: 1px solid black;
+
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+input {
+  width: 100%;
+  border: transparent;
+  outline: none;
+
+  font-size: 1rem;
+  text-align: center;
+}
+.loan-span {
+  width: 20px;
+  border-right: 1px solid black;
+  text-align: center;
+  font-size: 9px;
+  color: black;
+  background-color: rgb(219, 222, 222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 18px;
+}
+h5 {
+  padding: 10 0 0px 0;
+}
+#calculate {
+  width: 90%;
+  margin: 10px auto;
+  background-color: rgb(71, 69, 69);
+  border: none;
+  font-size: 10px;
+  outline: #0c262d 1px solid;
+  color: aliceblue;
+}
+.result-container {
+  display: none;
+  padding-top: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.output-result {
+  border: 1px solid black;
+
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+.form-span {
+  font-size: 7px;
+  width: 80px;
+  text-align: center;
+  color: black;
+  background-color: rgb(219, 222, 222);
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.output-result input {
+  width: 100%;
+  background-color: rgb(219, 222, 222);
+  border-left: 1px solid black;
+  outline: none;
+  padding: 1px;
+  font-size: 1rem;
+  color: black;
+}
+.error {
+  background-color: rgb(228, 188, 188);
+  color: rgb(179, 43, 43);
+  font-size: 0.7rem;
+  padding: 2px;
+  margin: 10px;
+}
+.fa-spinner {
+  display: flex;
+  font-size: 4rem;
+  padding: 20px;
+  animation: spin 1s linear infinite;
+}
+#spin {
+  display: none;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loan calc</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="submit" class="loan-form">
+        <h1>Loan Calculator</h1>
+        <div class="loan-box">
+          <span class="loan-span">$</span>
+          <input type="text" placeholder="Loan Amount" id="amount" />
+        </div>
+        <div class="loan-box">
+          <span class="loan-span">%</span>
+          <input type="text" placeholder="Annual interest" id="annual" />
+        </div>
+        <div class="loan-box">
+          <input type="text" placeholder="Repayment Years" id="Repayment" />
+        </div>
+        <button type="submit" id="calculate">Calculate</button>
+      </form>
+      <div id="spin">
+        <i class="fa-solid fa-spinner"></i>
+      </div>
+      <div class="result-container">
+        <h5>Result</h5>
+        <div class="form-group">
+          <div class="output-result">
+            <span class="form-span">Monthly Payment</span>
+            <input type="text" id="monthly-payment" disabled />
+          </div>
+
+          <div class="output-result">
+            <span class="form-span">Total Payment</span>
+            <input type="text" id="total-payment" disabled />
+          </div>
+
+          <div class="output-result">
+            <span class="form-span">Total Interest</span>
+            <input type="text" id="total-interest" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
