@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   min-height: 100vh;
   background-color: #b1c8cf;
 }
@@ -18,13 +19,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: ;
   background-color: white;
   text-align: center;
 }
 .loan-box {
   border: 1px solid black;
 
-  width: 180px;
+  width: 200px;
   display: flex;
   justify-content: space-between;
   margin: 10px;
@@ -33,7 +35,7 @@ input {
   width: 100%;
   border: transparent;
   outline: none;
-
+  background-color: white;
   font-size: 1rem;
   text-align: center;
 }
@@ -57,11 +59,14 @@ h5 {
 #calculate {
   width: 90%;
   margin: 10px auto;
+  height: 20px;
   background-color: rgb(71, 69, 69);
   border: none;
-  font-size: 10px;
+  font-size: 18px;
+
   outline: #0c262d 1px solid;
-  color: aliceblue;
+  font-weight: bold;
+  color: white;
 }
 .result-container {
   display: none;
